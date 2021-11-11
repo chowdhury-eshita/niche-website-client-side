@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Nikon AF-S DX Nikkor 35mm f/1.8G Lens",
+        "cost": 19000,
+        "description": "Focal Length: 35mm, Maximum Aperture: f/ 1.8G, Filter Size: 52mm, Format Compatibility: APS-C",
+        "img": "https://www.startech.com.bd/image/cache/catalog/lens/nikon/af-s-dx-nikkor/af-s-dx-nikkor-1-228x228.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Canon EF-S 55-250mm f/4-5.6 IS STM Telephoto Zoom Lens",
+        "cost": 20000,
+        "description": "Focal Length 55-250mm,Maximum Aperture 1:4-5.6, Angle of View: 27° 50' - 6° 15', Focusing Distance: 2.79 ft. / 0.85m",
+        "img": "https://www.startech.com.bd/image/cache/catalog/Camera%20Lenses/Canon/Canon%20EF-S%2055-250mm%20IS%20STM-228x228.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Nikon AF-S Nikkor 50mm f/1.8G Lens",
+        "cost": 20500,
+        "description": "Focal Length 50 mm, Mount Type Nikon F-Bayonet, Maximum Aperture f/ 1.8",
+        "img": "https://www.startech.com.bd/image/cache/catalog/lens/nikon/50mm/nikon-50mm-228x228.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Sony E 55-210mm f/4.5-6.3 OSS Lens",
+        "cost": 20500,
+        "description": "Focal Length Range 55-210mm, Maximum Aperture f/ 4.5-6.3,Angle of View 29°-7°40', Focus Distance- 82.5-315mm",
+        "img": "https://www.startech.com.bd/image/cache/catalog/lens/sony/e-55-210/sony-55-210-mm-228x228.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Canon EF-S 10-18mm f/4.5-5.6 IS STM Lens",
+        "cost": 23000,
+        "description": "Focal Length: 10 to 18mm, Maximum Aperture: f/4.5 to 5.6,Angle of View: 107° 30' to 74° 20', Format Compatibility: APS-C",
+        "img": "https://www.startech.com.bd/image/cache/catalog/lens/canon/ef-s-10-18mm/ef-s-10-18mm-1-228x228.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Sony E 50mm f/1.8 OSS Lens",
+        "cost": 26000,
+        "description": "Focal Length Range 50mm, Maximum Aperture f/ 1.8, Angle of View 32°, Focus Distance- 75mm",
+        "img": "https://www.startech.com.bd/image/cache/catalog/lens/sony/e-50/e-50-228x228.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Sony E 50mm f/1.8 Full Frame Lens",
+        "cost": 27000,
+        "description": "Focal Length Range 50mm, Maximum Aperture f/ 1.8, Angle of View 32°, Focus Distance- 50mm",
+        "img": "https://www.startech.com.bd/image/cache/catalog/lens/sony/fe-50/fe-50-228x228.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Canon EF 85mm f/1.8 USM Prime Lens",
+        "cost": 37000,
+        "description": "Focal Length: 85mm, Maximum Aperture: f/1.8, Angle of View: 28° 30', Format Compatibility: Full-Frame",
+        "img": "https://www.startech.com.bd/image/cache/catalog/lens/canon/ef-85mm-usm-prime/ef-85mm-1-228x228.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Canon EF-S 24mm f/2.8 STM Lens",
+        "cost": 13800,
+        "description": "Focal Length: 24mm, Maximum Aperture: f/2.8, Angle of View: 59° 10', Focusing Distance: 0.52 ft. / 0.16 m",
+        "img": "https://www.startech.com.bd/image/cache/catalog/lens/canon/ef-s-24mm-stm/ef-s-24mm-1-228x228.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Canon EF 75-300mm f/4-5.6 III Telephoto Zoom Lens",
+        "cost": 18000,
+        "description": "Focal Length 75-300mm, Maximum Aperture: 1:4-5.6, Angle of,View: 32° 11' - 8° 15', Focusing Distance: 1.5m/ 4.9 ft.",
+        "img": "https://www.startech.com.bd/image/cache/catalog/Camera%20Lenses/Canon/Canon%20EF%2075-300mm%20III-228x228.jpg"
+    }
+]
