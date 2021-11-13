@@ -19,6 +19,7 @@ const Register = () => {
         const newLoginData = { ...loginData };
         //update the data from recent changed field
         newLoginData[field] = value;
+        console.log(newLoginData);
         //set the data
         setLoginData(newLoginData);
     }

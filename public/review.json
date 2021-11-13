@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "description": " The Canon EOS DSLR camera system is incredibly broad, easy to use and impressively performing – and has Canon's excellent customer support behind it. Canon has been my primary choice for over 17 years. You will find extensive reviews of the referenced cameras and lenses using these links.",
+        "rating": "4.2"
+    },
+    {
+        "id": 2,
+        "name": "June Tognolini",
+        "description": "Sony has been coming on strong in the camera and lens marketplace and I have owned Sony's best cameras since 2016. You will find numerous full reviews of Sony alpha-series cameras and E-mount lenses available with test results from even a larger selection.",
+        "rating": "4.6"
+    },
+    {
+        "id": 3,
+        "name": "Ed Simkins",
+        "description": "A camera and lens are the basics needed for a DSLR camera kit, but most photographers are going to want more. I am very discerning in what joins my kit and here you will find links to reviews of some of the most-desired photography accessories available.",
+        "rating": "3.2"
+    }
+]
