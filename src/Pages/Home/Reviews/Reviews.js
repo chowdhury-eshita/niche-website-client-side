@@ -8,12 +8,12 @@ import Review from '../Review/Review';
 const Reviews = () => {
     const [reviews, setReviews] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://limitless-beyond-81209.herokuapp.com/reviews')
             .then(res => res.json())
             .then(data => setReviews(data));
     }, [])
     return (
-        <Box sx={{ flexGrow: 1 }}>
+        <Box style={{ marginTop: 80 }} sx={{ flexGrow: 1 }}>
             <Container>
                 <Typography sx={{ fontWeight: 'bold', color: 'info.main', my: 2 }} variant="h4" component="div">
                     Client Reviews

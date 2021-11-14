@@ -19,6 +19,7 @@ import {
     Route,
     useRouteMatch
 } from "react-router-dom";
+import { CircularProgress } from '@mui/material';
 import ManageProducts from '../ManageProducts/ManageProducts';
 import ManageAllOrders from '../ManageAllOrders/ManageAllOrders';
 import AddProduct from '../AddProduct/AddProduct';
@@ -35,6 +36,10 @@ function Dashboard(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
 
+    // if (!admin) {
+    //     return <CircularProgress />
+    //  }
+
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     };
@@ -44,6 +49,7 @@ function Dashboard(props) {
             <img style={{ hieght: 10, width: 100 }} src="https://media.istockphoto.com/vectors/camera-photo-lens-vector-id1169907641?b=1&k=20&m=1169907641&s=170x170&h=quKGDpujPxtowlbNKOKnpe7TfmXwiT6VtO0GuKf0ifI=" alt="" />
             {/* <Toolbar /> */}
             {/* <Divider /> */}
+
             <Box>
                 <NavLink style={{ textDecoration: 'none', color: 'darkorchid' }} to="/home">
                     <Button color="inherit">Home</Button>
@@ -83,18 +89,6 @@ function Dashboard(props) {
                     <Button onClick={logOut} color="inherit">Logout</Button>
                 </NavLink>
             </Box>
-
-
-            {/* <List>
-                {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemIcon>
-                            {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                        </ListItemIcon>
-                        <ListItemText primary={text} />
-                    </ListItem>
-                ))}
-            </List> */}
         </div >
     );
 

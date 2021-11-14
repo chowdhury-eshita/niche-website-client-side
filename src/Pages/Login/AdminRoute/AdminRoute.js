@@ -4,8 +4,8 @@ import { Redirect, Route } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 const AdminRoute = ({ children, ...rest }) => {
-    const { admin, user, isLoading } = useAuth();
-    if (isLoading) {
+    const { admin, user } = useAuth();
+    if (!admin) {
         return <CircularProgress />
     }
     return (

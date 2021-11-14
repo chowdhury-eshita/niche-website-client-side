@@ -8,7 +8,7 @@ const AddProduct = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = (data) => {
         console.log(data)
-        axios.post('http://localhost:5000/products', data)
+        axios.post('https://limitless-beyond-81209.herokuapp.com/products', data)
             .then(res => {
                 // console.log(res);
                 if (res.data.insertedId) {

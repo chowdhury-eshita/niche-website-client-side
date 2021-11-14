@@ -19,14 +19,14 @@ const Booking = () => {
     const { register, handleSubmit, reset } = useForm();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${bookingId}`)
+        fetch(`https://limitless-beyond-81209.herokuapp.com/products/${bookingId}`)
             .then(res => res.json())
             .then(data => setProduct(data));
     }, []);
 
     const onSubmit = (data) => {
         console.log(data)
-        axios.post(`http://localhost:5000/orders`, data)
+        axios.post(`https://limitless-beyond-81209.herokuapp.com/orders`, data)
             .then(res => {
                 // console.log(res);
                 if (res.data.insertedId) {
@@ -71,6 +71,7 @@ const Booking = () => {
                             <input {...register('email', { required: true })} value={user.email} />
                             <input {...register('phone', { required: true })} placeholder="Phone" />
                             <textarea {...register('address', { required: true })} placeholder="Address" />
+                            {/* <input {...register('status')} value="Pending" /> */}
                             <input className="btn btn-primary" type="submit" />
                         </form>
                     </Grid>

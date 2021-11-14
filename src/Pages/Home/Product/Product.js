@@ -1,5 +1,8 @@
-import React from 'react';
+import * as React from 'react';
+import Rating from '@mui/material/Rating';
+import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Grid';
+import { Box } from '@mui/material';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -8,7 +11,7 @@ import { NavLink } from 'react-router-dom';
 import { Button } from '@mui/material';
 
 const Product = (props) => {
-    const { _id, name, cost, description, img } = props.product;
+    const { _id, name, cost, description, rating, img } = props.product;
     return (
         <Grid item xs={4} sm={4} md={4}>
             <Card sx={{ minWidth: 275 }}>
@@ -25,6 +28,11 @@ const Product = (props) => {
                     <Typography sx={{ fontWeight: 'bold' }} variant="h5" component="div">
                         Price: {cost}
                     </Typography>
+                    <Box style={{ display: 'flex', justifyContent: 'center' }} >
+                        <Stack sx={{ mt: 2 }} spacing={1}>
+                            <Rating name="read-only" readOnly defaultValue={rating} precision={1} />
+                        </Stack>
+                    </Box>
                     <Typography sx={{ my: 1 }} variant="body2" color="text.secondary">
                         {description}
                     </Typography>

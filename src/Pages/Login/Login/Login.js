@@ -33,9 +33,9 @@ const Login = () => {
 
     return (
         <Container>
-            <Grid container spacing={2}>
+            <Grid style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center' }} container spacing={2}>
                 <Grid item sx={{ mt: 8 }} xs={12} md={6}>
-                    <Typography variant="body1" gutterBottom>Login</Typography>
+                    <Typography variant="h6" sx={{ fontWeight: 'bold', color: 'info.main' }} gutterBottom>Login</Typography>
                     <form onSubmit={handleLoginSubmit}>
                         <TextField
                             sx={{ width: '75%', m: 1 }}

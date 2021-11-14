@@ -13,14 +13,14 @@ const MyOrder = () => {
     const { user } = useAuth();
     const [orders, setOrders] = useState([]);
     useEffect(() => {
-        const url = `http://localhost:5000/myOrders?email=${user.email}`
+        const url = `https://limitless-beyond-81209.herokuapp.com/myOrders?email=${user.email}`
         fetch(url)
             .then(res => res.json())
             .then(data => setOrders(data));
     }, []);
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/orders/${id}`;
+        const url = `https://limitless-beyond-81209.herokuapp.com/orders/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

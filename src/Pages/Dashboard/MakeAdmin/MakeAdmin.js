@@ -14,7 +14,7 @@ const MakeAdmin = () => {
         e.preventDefault();
 
         const user = { email };
-        fetch('http://localhost:5000/users', {
+        fetch('https://limitless-beyond-81209.herokuapp.com/users', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -25,6 +25,7 @@ const MakeAdmin = () => {
             .then(data => {
                 if (data.modifiedCount) {
                     setSuccess(true);
+                    alert('Admin added successfully');
                 }
             })
     }

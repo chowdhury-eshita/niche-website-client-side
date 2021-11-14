@@ -11,12 +11,12 @@ import { Box, Typography } from '@mui/material';
 const ManageProducts = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://limitless-beyond-81209.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [])
     const handleDelete = id => {
-        const url = `http://localhost:5000/products/${id}`;
+        const url = `https://limitless-beyond-81209.herokuapp.com/products/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

@@ -10,15 +10,16 @@ import { Box, Typography } from '@mui/material';
 
 const ManageAllOrders = () => {
     const [orders, setOrders] = useState([]);
+    const [status, setState] = useState('Pending');
     useEffect(() => {
-        const url = `http://localhost:5000/orders`
+        const url = `https://limitless-beyond-81209.herokuapp.com/orders`
         fetch(url)
             .then(res => res.json())
             .then(data => setOrders(data));
     }, []);
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/orders/${id}`;
+        const url = `https://limitless-beyond-81209.herokuapp.com/orders/${id}`;
         fetch(url, {
             method: 'DELETE'
         })
@@ -32,6 +33,12 @@ const ManageAllOrders = () => {
                 }
             });
     }
+    const handleStatus = () => {
+        setState('Shipped');
+
+    }
+
+
     return (
         <Box>
             <Typography sx={{
@@ -46,6 +53,7 @@ const ManageAllOrders = () => {
                             <TableCell>Email</TableCell>
                             <TableCell align="right">Product</TableCell>
                             <TableCell align="right">Price</TableCell>
+                            <TableCell align="right">Status</TableCell>
                             <TableCell align="right">Action</TableCell>
                         </TableRow>
                     </TableHead>
@@ -60,8 +68,14 @@ const ManageAllOrders = () => {
                                 </TableCell>
                                 <TableCell align="right">{row.product}</TableCell>
                                 <TableCell align="right">{row.cost}</TableCell>
+                                <TableCell align="right">{status}</TableCell>
                                 <TableCell align="right">{
-                                    <button onClick={() => handleDelete(row._id)}>Cancel Booking</button>
+                                    <>
+                                        <button onClick={() => handleDelete(row._id)}>Cancel Booking</button>
+                                        <br />
+                                        <br />
+                                        <button onClick={handleStatus}>Update Status</button>
+                                    </>
                                 }</TableCell>
                             </TableRow>
                         ))}

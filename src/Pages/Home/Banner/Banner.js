@@ -20,7 +20,7 @@ const Banner = () => {
         <Box style={banner} sx={{ flexGrow: 1 }}>
             <Box>
                 <Typography sx={{ color: 'white', fontWeight: 'bold' }} variant="h2" component="div">
-                    Shop your product
+                    Find your product
                 </Typography>
                 <br />
                 <NavLink style={{ textDecoration: 'none' }} to="/explore">

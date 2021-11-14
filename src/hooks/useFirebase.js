@@ -46,6 +46,7 @@ const useFirebase = () => {
             .then((userCredential) => {
                 const destination = location?.state?.from || '/';
                 history.replace(destination);
+
                 const adminLocation = '/dashboard';
                 if (admin) {
                     history.push(adminLocation);
@@ -85,7 +86,7 @@ const useFirebase = () => {
     }
 
     useEffect(() => {
-        fetch(`http://localhost:5000/users/${user.email}`)
+        fetch(`https://limitless-beyond-81209.herokuapp.com/users/${user.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
     }, [user.email])
@@ -93,7 +94,7 @@ const useFirebase = () => {
     //save user to database
     const saveUser = (email, displayName) => {
         const user = { email, displayName };
-        fetch('http://localhost:5000/users', {
+        fetch('https://limitless-beyond-81209.herokuapp.com/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

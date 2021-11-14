@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "1. Weather resistance",
+        "img": "https://cdn.mos.cms.futurecdn.net/qjjr6wKFGrN3NTHW9sWHY8-970-80.jpg.webp",
+        "description": "If you plan on using a lens in harsher conditions, make sure to check that the lens is weather sealed. This means that it's designed with seals at any points of water and dust incursion to prevent these from getting inside. The front element will typically be treated with a coating designed to repel dust, water and dirt. Obviously, make sure your camera is weather-sealed too!"
+    },
+    {
+        "id": 2,
+        "title": "2. Focus options",
+        "img": "https://cdn.mos.cms.futurecdn.net/jg6suDDLP7woCGb4xtsaSM-970-80.jpg.webp",
+        "description": " Most lenses offer both manual focus and autofocus options, but some cheaper ones may only be manual-focus only. There should be a switch at the side of the lens that lets you choose between both (although these can be labelled somewhat confusingly).Most lenses from the major brands – Canon and Nikon, but also third-party manufacturers such as Sigma and Tamron – will be capable of autofocus. Particularly cheap and expensive lenses from third-party manufacturers are typically the ones more likely to be manual-focus only, so make sure to check this if one of these lenses appeals."
+    },
+    {
+        "id": 3,
+        "title": "3. Lens version",
+        "img": "https://cdn.mos.cms.futurecdn.net/twSuXFjcGERzYTmdcxWHF7-970-80.jpg.webp",
+        "description": "It's common for manufacturers to update their most popular lenses with new versions over time, and these are usually indicated with a II or III after their title. New versions may be titled very similarly to the previous ones, but they will typically offer revised optical constructions and better focusing motors. You may even find newer versions fitted with features like image stabilisation."
+    }
+]
