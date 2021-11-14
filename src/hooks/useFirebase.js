@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider, signOut, updateProfile, onAuthStateChanged } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, updateProfile, onAuthStateChanged } from "firebase/auth";
 import initializeFirebase from "../Pages/Login/Firebase/firebase.init";
 
 
@@ -50,6 +50,7 @@ const useFirebase = () => {
                 if (admin) {
                     history.push(adminLocation);
                 }
+
                 setAuthError('');
             })
             .catch((error) => {

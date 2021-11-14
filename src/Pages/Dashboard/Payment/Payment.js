@@ -3,7 +3,7 @@ import React from 'react';
 
 const Payment = () => {
     return (
-        <Typography variant="h6">
+        <Typography style={{ minHeight: '100vh' }} variant="h6">
             Payment System Comming Soon...
         </Typography>
     );

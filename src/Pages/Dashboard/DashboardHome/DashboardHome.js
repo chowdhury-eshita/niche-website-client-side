@@ -2,8 +2,8 @@ import React from 'react';
 
 const DashboardHome = () => {
     return (
-        <div>
-            <h1>Dashboard Home</h1>
+        <div style={{ minHeight: '100vh' }}>
+            <img style={{ width: '100%' }} src="https://cdn.mos.cms.futurecdn.net/GrkeQMs8b5n6EKNUsyDuRN-1200-80.jpg" alt="" />
         </div>
     );
 };

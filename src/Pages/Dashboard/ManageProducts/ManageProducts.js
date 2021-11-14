@@ -6,6 +6,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import { Box, Typography } from '@mui/material';
 
 const ManageProducts = () => {
     const [products, setProducts] = useState([]);
@@ -30,33 +31,40 @@ const ManageProducts = () => {
             });
     }
     return (
-        <TableContainer component={Paper}>
-            <Table sx={{}} aria-label="Orders table">
-                <TableHead>
-                    <TableRow>
-                        <TableCell>Product</TableCell>
-                        <TableCell align="right">Price</TableCell>
-                        <TableCell align="right">Action</TableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {products.map((row) => (
-                        <TableRow
-                            key={row._id}
-                            sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                        >
-                            <TableCell component="th" scope="row">
-                                {row.name}
-                            </TableCell>
-                            <TableCell align="right">{row.cost}</TableCell>
-                            <TableCell align="right">{
-                                <button onClick={() => handleDelete(row._id)}>Remove Product</button>
-                            }</TableCell>
+        <Box>
+            <Typography sx={{
+                my: 2, color: 'info.main', fontWeight: 'bold'
+            }} variant="h5">
+                Manage All Products
+            </Typography>
+            <TableContainer style={{ minHeight: '100vh' }} component={Paper}>
+                <Table sx={{}} aria-label="Orders table">
+                    <TableHead>
+                        <TableRow>
+                            <TableCell>Product</TableCell>
+                            <TableCell align="right">Price</TableCell>
+                            <TableCell align="right">Action</TableCell>
                         </TableRow>
-                    ))}
-                </TableBody>
-            </Table>
-        </TableContainer>
+                    </TableHead>
+                    <TableBody>
+                        {products.map((row) => (
+                            <TableRow
+                                key={row._id}
+                                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                            >
+                                <TableCell component="th" scope="row">
+                                    {row.name}
+                                </TableCell>
+                                <TableCell align="right">{row.cost}</TableCell>
+                                <TableCell align="right">{
+                                    <button onClick={() => handleDelete(row._id)}>Remove Product</button>
+                                }</TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </TableContainer>
+        </Box>
     );
 };
 

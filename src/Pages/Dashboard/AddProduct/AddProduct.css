@@ -5,7 +5,11 @@
     align-items: center;
 }
 
-.add-product form input, textarea{
+.add-product form input{
     width: 40%;
+    margin-bottom: 10px;
+}
+.add-product textarea{
+    max-width: 40%;
     margin-bottom: 10px;
 }

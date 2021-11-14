@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import { NavLink } from 'react-router-dom';
 import { Button } from '@mui/material';
 
-const Product = (props) => {
+const ExploreProduct = (props) => {
     const { _id, name, cost, description, img } = props.product;
     return (
         <Grid item xs={4} sm={4} md={4}>
@@ -37,4 +37,4 @@ const Product = (props) => {
     );
 };
 
-export default Product;
+export default ExploreProduct;

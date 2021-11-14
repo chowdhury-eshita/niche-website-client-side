@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -42,44 +41,45 @@ function Dashboard(props) {
 
     const drawer = (
         <div>
-            <Toolbar />
-            <Divider />
+            <img style={{ hieght: 10, width: 100 }} src="https://media.istockphoto.com/vectors/camera-photo-lens-vector-id1169907641?b=1&k=20&m=1169907641&s=170x170&h=quKGDpujPxtowlbNKOKnpe7TfmXwiT6VtO0GuKf0ifI=" alt="" />
+            {/* <Toolbar /> */}
+            {/* <Divider /> */}
             <Box>
-                <NavLink style={{ textDecoration: 'none', color: 'gray' }} to="/home">
+                <NavLink style={{ textDecoration: 'none', color: 'darkorchid' }} to="/home">
                     <Button color="inherit">Home</Button>
                 </NavLink>
                 <br />
-                <NavLink style={{ textDecoration: 'none', color: 'gray' }} to={`${url}/myOrder`}>
+                <NavLink style={{ textDecoration: 'none', color: 'darkorchid' }} to={`${url}/myOrder`}>
                     <Button color="inherit">My Order</Button>
                 </NavLink>
                 <br />
-                <NavLink style={{ textDecoration: 'none', color: 'gray' }} to={`${url}/payment`}>
+                <NavLink style={{ textDecoration: 'none', color: 'darkorchid' }} to={`${url}/payment`}>
                     <Button color="inherit">Payment</Button>
                 </NavLink>
                 <br />
-                <NavLink style={{ textDecoration: 'none', color: 'gray' }} to={`${url}/addReview`}>
+                <NavLink style={{ textDecoration: 'none', color: 'darkorchid' }} to={`${url}/addReview`}>
                     <Button color="inherit">Add Review</Button>
                 </NavLink>
                 <br />
                 {admin && <Box>
-                    <NavLink style={{ textDecoration: 'none', color: 'blue' }} to={`${url}/manageProducts`}>
+                    <NavLink style={{ textDecoration: 'none', color: ' royalblue ' }} to={`${url}/manageProducts`}>
                         <Button color="inherit">Manage Products</Button>
                     </NavLink>
                     <br />
-                    <NavLink style={{ textDecoration: 'none', color: 'blue' }} to={`${url}/manageAllOrders`}>
+                    <NavLink style={{ textDecoration: 'none', color: 'royalblue' }} to={`${url}/manageAllOrders`}>
                         <Button color="inherit">Manage All Orders</Button>
                     </NavLink>
                     <br />
-                    <NavLink style={{ textDecoration: 'none', color: 'blue' }} to={`${url}/addProduct`}>
+                    <NavLink style={{ textDecoration: 'none', color: 'royalblue' }} to={`${url}/addProduct`}>
                         <Button color="inherit">Add Product</Button>
                     </NavLink>
                     <br />
-                    <NavLink style={{ textDecoration: 'none', color: 'blue' }} to={`${url}/makeAdmin`}>
+                    <NavLink style={{ textDecoration: 'none', color: 'royalblue' }} to={`${url}/makeAdmin`}>
                         <Button color="inherit">Make Admin</Button>
                     </NavLink>
                     <br />
                 </Box>}
-                <NavLink style={{ textDecoration: 'none', color: 'gray' }} to="/">
+                <NavLink style={{ textDecoration: 'none', color: 'darkorchid' }} to="/">
                     <Button onClick={logOut} color="inherit">Logout</Button>
                 </NavLink>
             </Box>
@@ -161,7 +161,7 @@ function Dashboard(props) {
                 component="main"
                 sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
             >
-                <Toolbar />
+                {/* <Toolbar /> */}
                 <Switch>
                     <Route exact path={path}>
                         <DashboardHome></DashboardHome>

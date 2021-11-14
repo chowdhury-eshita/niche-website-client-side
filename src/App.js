@@ -1,10 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Home from './Pages/Home/Home/Home';
 import Header from './Pages/Shared/Header/Header';
@@ -16,6 +14,7 @@ import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Booking from './Pages/Booking/Booking';
 import NotFound from './Pages/NotFound/NotFound';
+import ExploreProducts from './Pages/Explore/ExploreProducts/ExploreProducts';
 
 function App() {
   return (
@@ -24,6 +23,9 @@ function App() {
         <Router>
           <Header></Header>
           <Switch>
+            <Route path="/explore">
+              <ExploreProducts />
+            </Route>
             <PrivateRoute path="/booking/:bookingId">
               <Booking />
             </PrivateRoute>

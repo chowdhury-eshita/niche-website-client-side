@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { Alert } from '@mui/material';
+import { Alert, Typography } from '@mui/material';
 import { TextField, Button } from '@mui/material';
 
 const MakeAdmin = () => {
@@ -29,7 +29,12 @@ const MakeAdmin = () => {
             })
     }
     return (
-        <div>
+        <div style={{ minHeight: '100vh' }}>
+            <Typography sx={{
+                my: 2, color: 'info.main', fontWeight: 'bold'
+            }} variant="h5">
+                Make Admin
+            </Typography>
             <form onSubmit={handleAdminSubmit}>
                 <TextField
                     sx={{ width: '25%', m: 1 }}
