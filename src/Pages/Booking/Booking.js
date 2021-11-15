@@ -67,9 +67,15 @@ const Booking = () => {
                         }} component="div">
                             Please Place Order
                         </Typography>
+                        {/* <Typography sx={{
+                            my: 1
+                        }} variant="paragraph"
+                            component="div">
+                            Product Name and Price are required please click the submit button three times after filling all the field
+                        </Typography> */}
                         <form onSubmit={handleSubmit(onSubmit)}>
-                            <input {...register('product')} value={product.name} />
-                            <input {...register('cost')} value={product.cost} />
+                            <input {...register('product', { required: true })} value={product.name} />
+                            <input {...register('cost', { required: true })} value={product.cost} />
                             <input {...register('name', { required: true })} value={user.displayName} />
                             <input {...register('email', { required: true })} value={user.email} />
                             <input {...register('phone', { required: true })} placeholder="Phone" />
