@@ -8,13 +8,22 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
-import { makeStyles } from '@mui/material';
+import { makeStyles } from '@mui/styles';
+import { useTheme } from '@mui/material';
 
 const Header = () => {
     const { user, logOut } = useAuth();
+    const theme = useTheme()
     const useStyle = makeStyles({
+        navIcon: {
+            [theme.breakpoints.up('sm')]: {
+                display: 'none !important'
+            }
+
+        }
 
     })
+    const { navIcon } = useStyle();
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
@@ -25,12 +34,14 @@ const Header = () => {
                         color="inherit"
                         aria-label="menu"
                         sx={{ mr: 2 }}
+                        className={navIcon}
                     >
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         Lens Finder
                     </Typography>
+
                     <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/home">
                         <Button color="inherit">Home</Button>
                     </NavLink>
