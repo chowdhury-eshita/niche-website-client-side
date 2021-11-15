@@ -9,7 +9,7 @@ const Footer = () => {
             <Box style={{ marginTop: 'auto' }} sx={{ backgroundColor: 'black', py: 1, mt: 2, color: 'white' }}>
                 <Box sx={{ mt: 2 }}>
                     <Typography variant="h5">Contact Us:</Typography>
-                    <Typography sx={{ color: 'info.main' }} variant="h4">Lens Finder</Typography>
+                    <Typography sx={{ my: 2, color: 'info.main' }} variant="h4">Lens Finder</Typography>
                     <Typography variant="subtitle2">KochuKhet, Dhaka</Typography>
                     <Typography variant="subtitle2">Call: 304032</Typography>
                     <Typography variant="subtitle2">Mail: lensfinder@gmail.com</Typography>

@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
-
 const Register = () => {
     const [loginData, setLoginData] = useState({});
     const { user, registerUser, isLoading, authError } = useAuth();
@@ -35,9 +34,10 @@ const Register = () => {
     }
     return (
         <Container>
-            <Grid container spacing={2}>
-                <Grid item sx={{ mt: 8 }} xs={12} md={6}>
-                    <Typography variant="body1" gutterBottom>Register</Typography>
+            <Grid style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center' }} container spacing={2}>
+                <Grid item sx={{ my: 5 }} xs={12} md={6}>
+                    <Typography variant="h6" sx={{ fontWeight: 'bold', color: 'info.main' }} gutterBottom>Register
+                    </Typography>
                     {!isLoading && <form onSubmit={handleLoginSubmit}>
                         <TextField
                             sx={{ width: '75%', m: 1 }}
@@ -81,7 +81,7 @@ const Register = () => {
                     {authError && <Alert severity="error">something wrong</Alert>}
                 </Grid>
             </Grid>
-        </Container>
+        </Container >
     );
 };
 

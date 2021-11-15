@@ -62,7 +62,9 @@ const Booking = () => {
                         </Card>
                     </Grid>
                     <Grid className="product" item xs={12} md={6}>
-                        <Typography variant="h4" component="div">
+                        <Typography variant="h5" sx={{
+                            my: 2, color: 'info.main', fontWeight: 'bold'
+                        }} component="div">
                             Please Place Order
                         </Typography>
                         <form onSubmit={handleSubmit(onSubmit)}>
@@ -73,7 +75,7 @@ const Booking = () => {
                             <input {...register('phone', { required: true })} placeholder="Phone" />
                             <textarea {...register('address', { required: true })} placeholder="Address" />
                             {/* <input {...register('status')} value="Pending" /> */}
-                            <input style={{ color: 'blue', fontWeight: 'bold' }} type="submit" />
+                            <input style={{ backgroundColor: 'dodgerblue', color: 'white', fontWeight: 'bold' }} type="submit" />
                         </form>
                     </Grid>
                 </Grid>

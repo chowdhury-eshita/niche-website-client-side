@@ -25,11 +25,11 @@ const AddProduct = () => {
                 Add Product
             </Typography>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <input {...register('name')} placeholder="Name" />
+                <input {...register('name', { required: true })} placeholder="Name" />
                 <textarea {...register('description', { required: true })} placeholder="Description" />
-                <input {...register('cost')} placeholder="Price" />
-                <input {...register('img')} placeholder="img URL" />
-                <input type="submit" value="Add Product" />
+                <input {...register('cost', { required: true })} placeholder="Price" />
+                <input {...register('img', { required: true })} placeholder="img URL" />
+                <input style={{ backgroundColor: 'dodgerblue', color: 'white', fontWeight: 'bold' }} type="submit" value="Add Product" />
             </form>
         </Container>
     );

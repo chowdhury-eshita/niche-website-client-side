@@ -1,0 +1,31 @@
+[debug] [2021-11-15T12:53:25.398Z] ----------------------------------------------------------------------
+[debug] [2021-11-15T12:53:25.414Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-11-15T12:53:25.414Z] CLI Version:   9.21.0
+[debug] [2021-11-15T12:53:25.415Z] Platform:      win32
+[debug] [2021-11-15T12:53:25.415Z] Node Version:  v13.14.0
+[debug] [2021-11-15T12:53:25.923Z] Time:          Mon Nov 15 2021 18:53:25 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-11-15T12:53:25.924Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-15T12:53:26.553Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-15T12:53:26.554Z] > authorizing via signed-in user (chowdhuryeshita58@gmail.com)
+[debug] [2021-11-15T12:53:26.554Z] [iam] checking project lens-finder for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-11-15T12:53:26.745Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-15T12:53:26.745Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-15T12:53:27.744Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-11-15T12:53:27.746Z] > refreshing access token with scopes: []
+[debug] [2021-11-15T12:53:27.747Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-15T12:53:27.865Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-11-15T12:53:27.877Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Program Files\nodejs\node_modules\firebase-tools\lib\auth.js:141:12)
+    at refreshTokens (C:\Program Files\nodejs\node_modules\firebase-tools\lib\auth.js:448:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: Failed to get Firebase project lens-finder. Please make sure the project exists and your account has permission to access it.

@@ -25,10 +25,10 @@ const AddReview = () => {
                 Add Review
             </Typography>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <input {...register('name')} placeholder="Name" />
+                <input {...register('name', { required: true })} placeholder="Name" />
                 <textarea {...register('description', { required: true })} placeholder="Description" />
-                <input {...register('rating')} placeholder="Rating" />
-                <input type="submit" value="Add Review" />
+                <input {...register('rating', { required: true })} placeholder="Rating" />
+                <input style={{ backgroundColor: 'dodgerblue', color: 'white', fontWeight: 'bold' }} type="submit" value="Add Review" />
             </form>
         </Container>
     );

@@ -25,7 +25,7 @@ const ManageProducts = () => {
                 console.log(data);
                 if (data.deletedCount) {
                     alert('deleted');
-                    const remaining = products.filter(order => order._id !== id);
+                    const remaining = products.filter(product => product._id !== id);
                     setProducts(remaining);
                 }
             });
