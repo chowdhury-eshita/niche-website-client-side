@@ -11,6 +11,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import './Booking.css';
+import { Button } from '@mui/material';
 
 const Booking = () => {
     const { user } = useAuth();
@@ -65,14 +66,14 @@ const Booking = () => {
                             Please Place Order
                         </Typography>
                         <form onSubmit={handleSubmit(onSubmit)}>
-                            <input {...register('product', { required: true })} placeholder="Product" />
-                            <input {...register('cost', { required: true })} placeholder="Cost" />
+                            <input {...register('product')} value={product.name} />
+                            <input {...register('cost')} value={product.cost} />
                             <input {...register('name', { required: true })} value={user.displayName} />
                             <input {...register('email', { required: true })} value={user.email} />
                             <input {...register('phone', { required: true })} placeholder="Phone" />
                             <textarea {...register('address', { required: true })} placeholder="Address" />
                             {/* <input {...register('status')} value="Pending" /> */}
-                            <input className="btn btn-primary" type="submit" />
+                            <input style={{ color: 'blue', fontWeight: 'bold' }} type="submit" />
                         </form>
                     </Grid>
                 </Grid>
